@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="hero-container">
       <div className="hero-left">
-        <h1 className="hero-title">Welcome To My Personal Portfolio</h1>
+        <h1 className="section-title">Welcome To My Personal Portfolio</h1>
         <p className="hero-text">
           Generate some really good random text. This needs to look like a
           paragraph of random really cool and interested text. Maybe this text

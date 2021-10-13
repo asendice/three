@@ -1,14 +1,13 @@
 import React from "react";
 
-const Tech = () => {
-
+const Technologies = () => {
   return (
-    <div>
-      Tech
+    <div className="section-container">
+      <div className="section-header">
+        <h1 className="section-title">Technologies</h1>
+      </div>
     </div>
-  )
+  );
+};
 
-}
-
-
-export default Tech;
+export default Technologies;
