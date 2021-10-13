@@ -1,6 +1,14 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
+import axios from 'axios';
 
 const Projects = () => {
+const [projects, setProjects] = useState([]);
+
+  // const getProjects = async ()  => {
+  //   await axios.get()
+  // }
+
+
   return (
     <div className="section-container">
       <div className="section-header">
