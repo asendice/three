@@ -6,13 +6,13 @@ import Tech from "./components/Tech";
 import About from "./components/About";
 const App = () => {
   return (
-    <>
+    <div className="app">
       <Header />
       <Hero />
       <Projects />
       <Tech />
       <About />
-    </>
+    </div>
   );
 };
 

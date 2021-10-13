@@ -1,12 +1,15 @@
 * {
   padding: 0;
   margin: 0;
-  background-color: #080e1c;
   font-family: "Manrope", sans-serif;
 }
 
-/* Header Component Styling */
+.app {
+  background-color: #080e1c;
 
+}
+
+/* Header Component Styling */
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -38,6 +41,9 @@
   font-size: 24px;
   color: grey;
 }
+/* Header Component Styling */
+
+/* Socials Component Styling */
 .socials-container {
   flex: 1;
   display: flex;
@@ -50,3 +56,65 @@
   color: #fff;
   font-size: 34px;
 }
+/* Socials Component Styling */
+
+/* Hero Component Styling */
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  /* background-color: pink; */
+}
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 500px;
+  z-index: 2;
+}
+.hero-title {
+  font-size: 3.8rem;
+  font-weight: bold;
+  background: #ffffff;
+  background: -webkit-linear-gradient(to right, #ffffff 0%, grey 75%);
+  background: -moz-linear-gradient(to right, #ffffff 0%, grey 75%);
+  background: linear-gradient(to right, #ffffff 0%, grey 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-text {
+  color: grey;
+  font-size: 18px;
+  line-height: 2rem;
+  margin-top: 20px;
+}
+.hero-button {
+  margin-top: 20px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  background-image: linear-gradient(
+    to right,
+    #4776e6 0%,
+    #8e54e9 51%,
+    #4776e6 100%
+  );
+}
+.hero-button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.hero-right {
+  margin-left: -100px;
+  width: 400px;
+}
+
+/* Hero Component Styling */
