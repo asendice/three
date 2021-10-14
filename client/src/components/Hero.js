@@ -3,7 +3,7 @@ import RightSideAnimation from "./RightSideAnimation";
 
 const Hero = () => {
   return (
-    <div className="hero-container">
+    <div id="hero" className="hero-container">
       <div className="hero-left">
         <h1 className="section-title">Welcome To My Personal Portfolio</h1>
         <p className="hero-text">

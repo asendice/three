@@ -8,12 +8,20 @@
   background-color: #080e1c;
 }
 
+.cursor:hover {
+  cursor: pointer;
+}
+
 /* Header Component Styling */
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 25px;
+  background-color: #080e1c;
+  position: sticky;
+  position: -webkit-sticky;
+  top: -1px;
 }
 .header-name {
   flex: 1;
@@ -21,11 +29,7 @@
   align-items: center;
   justify-content: center;
 }
-.header-name h5 {
-  font-size: 24px;
-  font-weight: 600;
-  color: #fff;
-}
+
 .logo {
   font-size: 4rem;
   color: #fff;
@@ -40,7 +44,7 @@
   font-size: 24px;
   color: grey;
 }
-.active-link {
+a.active-link {
   color: #fff;
 }
 /* Header Component Styling */
@@ -73,7 +77,6 @@
   flex-direction: column;
   align-items: flex-start;
   width: 500px;
-  z-index: 2;
 }
 .section-title {
   font-size: 3.8rem;
@@ -152,7 +155,7 @@
   min-height: 450px;
   width: 350px;
   background-color: #080e1c;
-  margin: 20px;
+  margin: 10px;
   /* box-shadow: rgba(227, 227, 227, 0.35) 0px 5px 15px; */
   box-shadow: rgba(227, 227, 227, 0.35) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -174,4 +177,29 @@
   color: grey;
   line-height: 1.6rem;
 }
+.card-tech-header {
+  align-self:center;
+  color: #fff;
+}
+.card-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card-tech {
+  color: #4776e6;
+  margin: 5px;
+}
+.card-buttons-container {
+  display: flex;
+  justify-Content: space-evenly;
+  align-items: center;
+}
+.card-button {
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #8e54e9;
+}
+
 /* Card Component Styling */
