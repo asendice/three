@@ -6,6 +6,8 @@
 
 .app {
   background-color: #080e1c;
+  display: flex;
+  flex-direction: column;
 }
 
 .cursor:hover {
@@ -178,7 +180,7 @@ a.active-link {
   line-height: 1.6rem;
 }
 .card-tech-header {
-  align-self:center;
+  align-self: center;
   color: #fff;
 }
 .card-stack {
@@ -192,7 +194,7 @@ a.active-link {
 }
 .card-buttons-container {
   display: flex;
-  justify-Content: space-evenly;
+  justify-content: space-evenly;
   align-items: center;
 }
 .card-button {
@@ -203,3 +205,38 @@ a.active-link {
 }
 
 /* Card Component Styling */
+
+/* Footer Component Styling */
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+}
+.footer-contact {
+  display: flex;
+  border-top: rgba(227, 227, 227, 0.35) solid 1px;
+  height: 120px;
+  width: 800px;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+  height: 70px;
+}
+.footer-text {
+  font-size: 1.2rem;
+  color: grey;
+}
+.footer-juice {
+  font-size: 1.4rem;
+  color: #fff;
+}
+.footer-socials {
+  align-self: flex-end;
+  margin-bottom: 50px;
+}
+/* Footer Component Styling */
