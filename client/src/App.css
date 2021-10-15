@@ -3,17 +3,14 @@
   margin: 0;
   font-family: "Manrope", sans-serif;
 }
-
 .app {
   background-color: #080e1c;
   display: flex;
   flex-direction: column;
 }
-
 .cursor:hover {
   cursor: pointer;
 }
-
 /* Header Component Styling */
 .header-container {
   display: flex;
@@ -21,9 +18,9 @@
   align-items: center;
   padding: 25px;
   background-color: #080e1c;
-  position: sticky;
+  /* position: sticky;
   position: -webkit-sticky;
-  top: -1px;
+  top: -1px; */
 }
 .header-name {
   flex: 1;
@@ -31,7 +28,6 @@
   align-items: center;
   justify-content: center;
 }
-
 .logo {
   font-size: 4rem;
   color: #fff;
@@ -83,9 +79,10 @@ a.active-link {
   font-size: 3rem;
   font-weight: bold;
   background: #ffffff;
-  background: -webkit-linear-gradient(to right, #ffffff 0%, grey 75%);
-  background: -moz-linear-gradient(to right, #ffffff 0%, grey 75%);
-  background: linear-gradient(to right, #ffffff 0%, grey 75%);
+  background-clip: text;
+  background: -webkit-linear-gradient(to right, #ffffff 0%, grey 50%);
+  background: -moz-linear-gradient(to right, #ffffff 0%, grey 50%);
+  background: linear-gradient(to right, #ffffff 0%, grey 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -167,7 +164,7 @@ a.active-link {
   display: flex;
   flex-direction: column;
 }
-.card-content-end{
+.card-content-end {
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -204,11 +201,9 @@ a.active-link {
   color: #fff;
   background-color: #8e54e9;
 }
-
 /* Card Component Styling */
 
 /* Footer Component Styling */
-
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -241,3 +236,89 @@ a.active-link {
   margin-bottom: 50px;
 }
 /* Footer Component Styling */
+
+/* Tech Component Styling */
+.tech-container {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+.tech-icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  margin-top: 20px;
+}
+.tech-icon {
+  margin: 5px;
+  border: #f8f5f40d;
+  background-color: #f8f5f40d;
+  padding: 20px;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.icon {
+  font-size: 40px;
+}
+.tech-icon p {
+  font-size: 12px;
+  color: grey;
+}
+/* Tech Component Styling */
+
+/* about Component Styling */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+.about-achievement {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.achievement-container {
+  display: flex;
+  margin-top: 10px;
+}
+.achievement {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f8f5f40d;
+  margin: 10px;
+  text-decoration: none;
+  transition: all 0.8s ease;
+}
+.achievement:hover {
+  transform: translate(0.35em, -0.35em);
+}
+.acheivement::before::after {
+  content: "";
+  padding: 20px;
+  height:  10px;
+  width: 10px;
+  display: block;
+  position: absolute;
+  background-color: linear-gradient(to right, #4776e6 0%, #8e54e9 75%);
+}
+
+.achievement p {
+  color: #fff;
+}
+.nucamp {
+  background-clip: text;
+  background: -webkit-linear-gradient(to right, #4776e6 0%, #8e54e9 75%);
+  background: -moz-linear-gradient(to right, #4776e6 0%, #8e54e9 75%);
+  background: linear-gradient(to right, #4776e6 0%, #8e54e9 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* about Component Styling */

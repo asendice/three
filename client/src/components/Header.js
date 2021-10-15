@@ -13,7 +13,7 @@ const Header = () => {
           spy={true}
           smooth={true}
           duration={1500}
-          offset={-60}
+          // offset={-60}
           activeClass="active-link"
           className="cursor"
         >
@@ -28,7 +28,7 @@ const Header = () => {
           spy={true}
           smooth={true}
           duration={1500}
-          offset={-60}
+          // offset={-60}
           activeClass="active-link"
           className="cursor"
         >
@@ -39,7 +39,7 @@ const Header = () => {
           spy={true}
           smooth={true}
           duration={1500}
-          offset={-60}
+          // offset={-60}
           activeClass="active-link"
           className="cursor"
         >
@@ -50,11 +50,11 @@ const Header = () => {
           spy={true}
           smooth={true}
           duration={1500}
-          offset={-60}
+          // offset={-60}
           activeClass="active-link"
           className="cursor"
         >
-          About
+          About Me
         </Link>
       </div>
       <Socials />
