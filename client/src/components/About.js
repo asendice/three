@@ -1,4 +1,5 @@
 import React from "react";
+import Timeline from "./Timeline";
 
 const About = () => {
   return (
@@ -14,7 +15,8 @@ const About = () => {
           i got into coding -my coding journey
         </p>
 
-        <div className="about-timeline"></div>
+        <Timeline />
+
         <div className="about-achievement">
           <p className="section-title" style={{ fontSize: "1.4rem" }}>
             Personal Achievements
@@ -24,31 +26,37 @@ const About = () => {
               href="https://dtravmysite.s3.us-west-1.amazonaws.com/certificates/Bootstrap_Certificate_Dylan.pdf"
               rel="noopener noreferrer"
               target="_blank"
-              className="achievement"
+              style={{textDecoration: "none"}}
             >
-              <p className="nucamp">nucamp</p>
-              <p>Front-End Web Development: Bootstrap</p>
-              <p style={{ alignSelf: "flex-end" }}>2020</p>
+              <div className="achievement">
+                <p className="nucamp">nucamp</p>
+                <p>Front-End Web Development: Bootstrap</p>
+                <p style={{ alignSelf: "flex-end" }}>2020</p>
+              </div>
             </a>
             <a
               href="https://dtravmysite.s3.us-west-1.amazonaws.com/certificates/React_Certificate_Dylan.pdf"
               rel="noopener noreferrer"
               target="_blank"
-              className="achievement"
+              style={{textDecoration: "none"}}
             >
-              <p className="nucamp">nucamp</p>
-              <p>Front-End Web Development: React</p>
-              <p style={{ alignSelf: "flex-end" }}>2020</p>
+              <div className="achievement">
+                <p className="nucamp">nucamp</p>
+                <p>Front-End Web Development: React</p>
+                <p style={{ alignSelf: "flex-end" }}>2020</p>
+              </div>
             </a>
             <a
               href="https://dtravmysite.s3.us-west-1.amazonaws.com/certificates/Front_End_Certificate_Dylan.pdf"
               rel="noopener noreferrer"
               target="_blank"
-              className="achievement"
+              style={{textDecoration: "none"}}
             >
-              <p className="nucamp">nucamp</p>
-              <p>Front-End Web and Mobile Development Bootcamp</p>
-              <p style={{ alignSelf: "flex-end" }}>2020</p>
+              <div className="achievement">
+                <p className="nucamp">nucamp</p>
+                <p>Front-End Web and Mobile Development Bootcamp</p>
+                <p style={{ alignSelf: "flex-end" }}>2020</p>
+              </div>
             </a>
           </div>
         </div>

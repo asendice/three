@@ -4,7 +4,7 @@ const Card = ({ project }) => {
   return (
     <div className="card-container">
       <div className="card-content">
-        <img className="card-image" src={project.images[1]} />
+        <img alt="project-img" className="card-image" src={project.images[1]} />
         <div style={{ padding: "15px" }}>
           <h3 className="card-name">{project.name}</h3>
           <p className="card-text">{project.description}</p>
