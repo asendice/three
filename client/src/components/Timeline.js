@@ -62,7 +62,6 @@ const Timeline = () => {
         ) : (
           <div></div>
         )}
-
         {data.map((item, index) => {
           let style =
             index > firstIndex + 1
@@ -85,7 +84,6 @@ const Timeline = () => {
           <BsArrowRightShort
             className="timeline-arrows cursor"
             onClick={() => onRightArrowClick()}
-            style={{ left: 0 }}
           />
         ) : null}
       </div>

@@ -4,15 +4,19 @@ const Card = ({ project }) => {
   return (
     <div className="card-container">
       <div className="card-content">
-        <img alt="project-img" className="card-image" src={project.images[1]} />
+        <img
+          alt={`${project.name} display image`}
+          className="card-image"
+          src={project.images[1]}
+        />
         <div style={{ padding: "15px" }}>
-          <h3 className="card-name">{project.name}</h3>
+          <h1 className="card-name">{project.name}</h1>
           <p className="card-text">{project.description}</p>
         </div>
       </div>
 
       <div className="card-content-end">
-        <p className="card-tech-header">Tech stack</p>
+        <p className="card-tech-header">Tech Stack</p>
         <div className="card-stack">
           {project.skills.map((skill, index) => {
             return (
@@ -23,9 +27,29 @@ const Card = ({ project }) => {
           })}
         </div>
         <div className="card-buttons-container">
-          <div className="card-button">Github</div>
-          <div className="card-button">Learn More</div>
-          <div className="card-button">Live Demo</div>
+          <a
+            href={project.gitHub}
+            rel="noopener noreferrer"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <div className="card-button cursor">Github</div>
+          </a>
+          <a>
+            <div className="card-button cursor">Learn More</div>
+          </a>
+          {project.live.length > 0 ? (
+            <a
+              href={project.live}
+              rel="noopener noreferrer"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
+              <div className="card-button cursor">Live Demo</div>
+            </a>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>
