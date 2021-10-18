@@ -7,15 +7,15 @@ const Timeline = () => {
   const data = [
     {
       date: "2012 - 2016",
-      title: "Department Supervisor",
+      title: "Department Supervisor for The Home Depot",
     },
     {
       date: "2016 - 2018",
-      title: "Store Manager",
+      title: "Store Manager for Sprint",
     },
     {
       date: "2018 - 2019",
-      title: "Ebay Business",
+      title: "Created a Re-Sell Ebay Business",
     },
     {
       date: "2019",
@@ -23,7 +23,7 @@ const Timeline = () => {
     },
     {
       date: "2019 - 2020",
-      title: "Store Manager",
+      title: "Store Manager at Spectrum",
     },
     {
       date: "2020",
@@ -46,41 +46,49 @@ const Timeline = () => {
   };
 
   return (
-    <div className="timeline-container">
-      <BsArrowLeftShort
-        className="timeline-arrows cursor"
-        onClick={() => onLeftArrowClick()}
-        style={{
-          opacity: firstIndex === 0 ? 0 : 1,
-          cursor: firstIndex === 0 ? "default" : "pointer",
-        }}
-      />
+    <div className="timeline">
+      <p
+        className="section-title"
+        style={{ fontSize: "1.4rem", marginTop: "20px" }}
+      >
+        Work Exp/Coding Journey
+      </p>
+      <div className="timeline-container">
+        {firstIndex > 0 ? (
+          <BsArrowLeftShort
+            className="timeline-arrows cursor"
+            onClick={() => onLeftArrowClick()}
+          />
+        ) : (
+          <div></div>
+        )}
 
-      {data.map((item, index) => {
-        let style =
-          index > firstIndex + 1
-            ? "nextItem"
-            : index === firstIndex
-            ? "activeItem"
-            : index === firstIndex + 1
-            ? "secondActiveItem"
-            : "prevItem";
-        return (
-          <div key={index} className={`timeline-item ${style}`}>
-            <p className="section-title" style={{ fontSize: "1.4rem" }}>
-              {item.date}
-            </p>
-            <p>{item.title}</p>
-          </div>
-        );
-      })}
-      {firstIndex <= 4 ? (
-        <BsArrowRightShort
-          className="timeline-arrows cursor"
-          onClick={() => onRightArrowClick()}
-          style={{ left: 0 }}
-        />
-      ) : null}
+        {data.map((item, index) => {
+          let style =
+            index > firstIndex + 1
+              ? "nextItem"
+              : index === firstIndex
+              ? "activeItem"
+              : index === firstIndex + 1
+              ? "secondActiveItem"
+              : "prevItem";
+          return (
+            <div key={index} className={`timeline-item ${style}`}>
+              <p className="section-title" style={{ fontSize: "1.4rem" }}>
+                {item.date}
+              </p>
+              <p>{item.title}</p>
+            </div>
+          );
+        })}
+        {firstIndex <= 4 ? (
+          <BsArrowRightShort
+            className="timeline-arrows cursor"
+            onClick={() => onRightArrowClick()}
+            style={{ left: 0 }}
+          />
+        ) : null}
+      </div>
     </div>
   );
 };
