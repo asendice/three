@@ -4,6 +4,12 @@ import { Link } from "react-scroll";
 
 const Header = () => {
   const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth > 800) {
+      setActive(false);
+    }
+  }, [window.innerWidth]);
   return (
     <div>
       <div className="header-container">
@@ -77,6 +83,7 @@ const Header = () => {
             // offset={-60}
             activeClass="active-link"
             className="cursor mobile-link"
+            onClick={() => setActive(false)}
           >
             Projects
           </Link>
@@ -88,6 +95,7 @@ const Header = () => {
             // offset={-60}
             activeClass="active-link"
             className="cursor mobile-link"
+            onClick={() => setActive(false)}
           >
             Tech
           </Link>
@@ -99,6 +107,7 @@ const Header = () => {
             // offset={-60}
             activeClass="active-link"
             className="cursor mobile-link"
+            onClick={() => setActive(false)}
           >
             About Me
           </Link>

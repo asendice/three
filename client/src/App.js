@@ -10,10 +10,10 @@ const App = () => {
     <div className="app">
       <Header />
       <Hero />
-      {/* <Projects />
+      <Projects />
       <Tech />
       <About />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 };
