@@ -16,7 +16,7 @@ const Card = ({ project }) => {
       </div>
 
       <div className="card-content-end">
-        <p className="card-tech-header">Tech Stack</p>
+        <p className="card-tech-header">Technologies</p>
         <div className="card-stack">
           {project.skills.map((skill, index) => {
             return (
@@ -35,10 +35,8 @@ const Card = ({ project }) => {
           >
             <div className="card-button cursor">Github</div>
           </a>
-          <a>
-            <div className="card-button cursor">Learn More</div>
-          </a>
-          {project.live.length > 0 ? (
+
+          {project.live.length > 0 && (
             <a
               href={project.live}
               rel="noopener noreferrer"
@@ -47,8 +45,6 @@ const Card = ({ project }) => {
             >
               <div className="card-button cursor">Live Demo</div>
             </a>
-          ) : (
-            ""
           )}
         </div>
       </div>

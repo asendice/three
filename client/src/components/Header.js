@@ -64,7 +64,9 @@ const Header = () => {
               About Me
             </Link>
           </div>
-          <Socials />
+          <div className="socials-header">
+            <Socials />
+          </div>
         </div>
 
         <div onClick={() => setActive(!active)} className="burger-container">
@@ -101,7 +103,7 @@ const Header = () => {
           </Link>
           <Link
             to="about"
-            spy={true}
+            spy={true} 
             smooth={true}
             duration={1500}
             // offset={-60}
@@ -112,10 +114,12 @@ const Header = () => {
             About Me
           </Link>
 
-          <Socials />
-          <p className="mobile-link" onClick={() => setActive(false)}>
-            close
-          </p>
+          <div className="mobile-menu-social">
+            <Socials />
+            <p className="mobile-link cursor" onClick={() => setActive(false)}>
+              close
+            </p>
+          </div>
         </div>
       </div>
     </div>

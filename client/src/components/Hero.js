@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="hero-button">Learn More</div>
       </div>
       <div className="hero-right">
-        <RightSideAnimation />
+        {/* <RightSideAnimation /> */}
       </div>
     </div>
   );
