@@ -56,4 +56,4 @@ https://www.linkedin.com/in/dylan-travis-2716a4205
 https://dylantravisportfolio.com
 ```
 ## License
-[MIT](https://github.com/asendice/three/blob/main/License.txt)
+[MIT](https://github.com/asendice/three/blob/main/LICENSE.txt)
