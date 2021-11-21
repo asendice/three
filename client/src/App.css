@@ -207,6 +207,7 @@ a.active-link {
 }
 .card-image {
   max-height: 200px;
+  cursor: pointer;
 }
 .card-content {
   display: flex;
@@ -251,8 +252,8 @@ a.active-link {
   color: grey;
   width: 150px;
   height: 50px;
-  background-color: #f8f5f40d;
-  transition: all .4s ease-in-out;
+  background-color: #161926;
+  transition: all 0.4s ease-in-out;
 }
 
 .card-button:active {
@@ -309,8 +310,8 @@ a.active-link {
 }
 .tech-icon {
   margin: 5px;
-  border: #f8f5f40d;
-  background-color: #f8f5f40d;
+  border: #161926;
+  background-color: #161926;
   padding: 20px;
   height: 80px;
   width: 80px;
@@ -354,7 +355,7 @@ a.active-link {
   max-width: 180px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #f8f5f40d;
+  background-color: #161926;
   margin: 10px;
   text-decoration: none;
   transition: all 0.8s ease;
@@ -411,9 +412,12 @@ a.active-link {
   font-size: 12px;
 }
 .timeline-arrows {
+  display: flex;
+  align-items: center;
+  border: none;
   position: relative;
   border-radius: 100%;
-  background-color: #f8f5f40d;
+  background-color: #161926;
   padding: 5px;
   font-size: 2rem;
   color: #fff;
@@ -441,6 +445,92 @@ a.active-link {
 }
 
 /* Timeline Component Styling */
+/* imagemodal Component Styling */
+.image-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: hidden;
+  background-color: #161926;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.close-modal {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  border-radius: 30px;
+  background-color: #BDD4E7;
+  border: none;
+  align-self: flex-start;
+  margin-left: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.image-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: orange; */
+}
+.modal-image {
+  position: absolute;
+  object-fit: contain;
+  width: 100%;
+  height: 90%;
+  transition: all ease 0.6s;
+  opacity: 0;
+}
+.active-item {
+  opacity: 1;
+}
+.slide-btn {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  padding: 10px;
+  font-size: 2.4rem;
+  color: orange;
+  z-index: 1;
+  cursor: pointer;
+}
+.slide-btn:active {
+  opacity: 0.6;
+}
+.left {
+  margin-left: 10px;
+}
+.right {
+  margin-left: auto;
+  margin-right: 10px;
+}
+.placeholder {
+  position: relative;
+  display: flex;
+  border: none;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #333;
+  padding: 5px;
+}
+
+/* imagemodal Component Styling */
 
 /* media querey max-width: 800px */
 @media only screen and (max-width: 820px) {
@@ -484,6 +574,13 @@ a.active-link {
     opacity: 1;
     transform: translateY(40%);
   }
+  .left {
+    margin-left: 1px;
+  }
+  .right {
+    margin-right: 1px;
+  }
+
 }
 /* media querey max-width: 800px */
 

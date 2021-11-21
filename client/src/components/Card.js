@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import ImageModal from "./ImageModal";
 
 const Card = ({ project }) => {
+  const [open, setOpen] = useState(false);
   return (
     <div className="card-container">
       <div className="card-content">
@@ -8,6 +10,7 @@ const Card = ({ project }) => {
           alt={`${project.name} display image`}
           className="card-image"
           src={project.images[1]}
+          onClick={() => setOpen(!open)}
         />
         <div style={{ padding: "15px" }}>
           <h1 className="card-name">{project.name}</h1>
@@ -48,6 +51,7 @@ const Card = ({ project }) => {
           )}
         </div>
       </div>
+      <ImageModal open={open} setOpen={setOpen} images={project.images} />
     </div>
   );
 };
