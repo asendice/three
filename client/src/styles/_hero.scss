@@ -5,6 +5,12 @@
 .hero-left {
   @include flex(flex-start, null, column);
   width: 500px;
+  @include md { 
+    width: 400px;
+  }
+  @include sm { 
+    width: 300px;
+  }
 }
 .section-title {
   font-size: 3rem;
@@ -49,4 +55,7 @@
 .hero-right {
   margin-left: -100px;
   width: 400px;
+  @include lg {
+    display: none;
+  }
 }

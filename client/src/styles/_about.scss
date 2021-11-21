@@ -1,6 +1,6 @@
 .about-container {
   @include flex(null, null, column);
-  width: 800px;
+  @extend .container;
 }
 .about-achievement {
   @include flex(null, null, column);

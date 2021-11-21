@@ -3,6 +3,6 @@
   min-height: 70vh;
 }
 .section-header {
-  width: 800px;
   padding: 25px;
+  @extend .container;
 }

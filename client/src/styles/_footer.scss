@@ -6,7 +6,10 @@
 .footer-contact {
   display: flex;
   border-top: rgba(227, 227, 227, 0.35) solid 1px;
-  width: 800px;
+  @extend .container;
+  @include md{
+    justify-content: center;
+  }
 }
 .footer-content {
   @include flex(null, space-around, column);
@@ -16,13 +19,28 @@
 .footer-text {
   font-size: 1rem;
   color: $grey;
+  @include md {
+    font-size: 0.8rem;
+  }
+  @include sm {
+    font-size: 0.6rem;
+  }
 }
 .footer-juice {
   font-size: 1.2rem;
   color: $white;
+  @include md {
+    font-size: 1rem;
+  }
+  @include sm {
+    font-size: .8rem;
+  }
 }
 .footer-socials {
   align-self: flex-end;
   margin-bottom: 30px;
   margin-top: 10px;
+  @include md {
+    align-self: center;
+  }
 }

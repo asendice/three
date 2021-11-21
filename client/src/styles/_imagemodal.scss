@@ -58,9 +58,14 @@
 }
 .left {
   margin-left: 10px;
+  @include lg {
+    margin-left: 1px;
+  }
 }
 .right {
   margin-left: auto;
   margin-right: 10px;
+  @include lg {
+    margin-right: 1px;
+  }
 }
-

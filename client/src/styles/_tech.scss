@@ -1,9 +1,13 @@
 .tech-container {
   @include flex(null, null, column);
-  width: 800px;
+  @extend .container;
 }
 .tech-icon-container {
   @include flex (center, flex-start, row);
+  @extend .container;
+  @include lg {
+    justify-content: center;
+  }
   flex-wrap: wrap;
   width: 100%;
   margin-top: 20px;

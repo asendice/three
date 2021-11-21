@@ -8,3 +8,16 @@
   background-color: #101111;
   @include flex(null, null, column);
 }
+
+.container {
+  width: 800px;
+  @include lg {
+    width: 500px;
+  }
+  @include md {
+    width: 400px;
+  }
+  @include sm {
+    width: 300px;
+  }
+}

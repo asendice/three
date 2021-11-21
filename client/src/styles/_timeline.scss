@@ -1,17 +1,22 @@
 .timeline {
   @include flex(null, null, column);
-
 }
 .timeline-container {
   @include flex(center, space-between, row);
   position: relative;
-  width: 800px;
+  @extend .container;
   height: 150px;
 }
 .timeline-item {
   @include flex (null, center, column);
   position: absolute;
   width: 270px;
+  @include lg {
+    width: 130px;
+  }
+  @include md {
+    width: 100px;
+  }
   transition: all ease 0.3s;
   cursor: default;
   p {
