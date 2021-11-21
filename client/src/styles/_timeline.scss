@@ -1,0 +1,53 @@
+.timeline {
+  @include flex(null, null, column);
+
+}
+.timeline-container {
+  @include flex(center, space-between, row);
+  position: relative;
+  width: 800px;
+  height: 150px;
+}
+.timeline-item {
+  @include flex (null, center, column);
+  position: absolute;
+  width: 270px;
+  transition: all ease 0.3s;
+  cursor: default;
+  p {
+    color: $white;
+    font-size: 12px;
+  }
+}
+.timeline-arrows {
+  @include flex (center, null, row);
+  border: none;
+  position: relative;
+  border-radius: 100%;
+  background-color: $mobile;
+  cursor:pointer;
+  padding: 5px;
+  font-size: 2rem;
+  color: $white;
+  z-index: 1;
+}
+.timeline-arrows:active {
+  opacity: 0.6;
+}
+.prevItem {
+  left: calc(-20% + 2rem);
+  opacity: 0;
+}
+.activeItem {
+  left: 30%;
+  transform: translateX(-30%);
+}
+.secondActiveItem {
+  left: 70%;
+  transform: translateX(-50%);
+}
+.nextItem {
+  left: 120%;
+  transform: translateX(calc(-100% - 2rem));
+  opacity: 0;
+}

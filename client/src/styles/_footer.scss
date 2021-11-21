@@ -1,0 +1,28 @@
+.footer-container {
+  @include flex(center, null, column);
+  align-self: center;
+  margin-top: 20px;
+}
+.footer-contact {
+  display: flex;
+  border-top: rgba(227, 227, 227, 0.35) solid 1px;
+  width: 800px;
+}
+.footer-content {
+  @include flex(null, space-around, column);
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.footer-text {
+  font-size: 1rem;
+  color: $grey;
+}
+.footer-juice {
+  font-size: 1.2rem;
+  color: $white;
+}
+.footer-socials {
+  align-self: flex-end;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}

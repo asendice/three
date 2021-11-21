@@ -1,0 +1,5 @@
+.projects-container {
+  @include flex(null, space-evenly, row);
+  flex-wrap: wrap;
+  max-width: 1000px;
+}

@@ -1,0 +1,52 @@
+.hero-container {
+  @include flex(center, center, row);
+  min-height: 85vh;
+}
+.hero-left {
+  @include flex(flex-start, null, column);
+  width: 500px;
+}
+.section-title {
+  font-size: 3rem;
+  font-weight: bold;
+  background: $white;
+  background-clip: text;
+  background: -webkit-linear-gradient(to right, $white 0%, grey 50%);
+  background: -moz-linear-gradient(to right, $white 0%, grey 50%);
+  background: linear-gradient(to right, $white 0%, grey 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-text {
+  color: grey;
+  font-size: 18px;
+  line-height: 2rem;
+  margin-top: 20px;
+}
+.hero-button {
+  margin-top: 20px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  background-image: linear-gradient(
+    to right,
+    #4776e6 0%,
+    #8e54e9 51%,
+    #4776e6 100%
+  );
+}
+.hero-button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: $white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.hero-right {
+  margin-left: -100px;
+  width: 400px;
+}

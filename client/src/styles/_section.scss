@@ -1,0 +1,8 @@
+.section-container {
+  @include flex(center, null, column);
+  min-height: 70vh;
+}
+.section-header {
+  width: 800px;
+  padding: 25px;
+}

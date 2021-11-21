@@ -1,0 +1,57 @@
+.card-container {
+  @include flex(null, space-between, column);
+  max-width: 350px;
+  background-color: $mobile;
+  margin: 10px;
+  /* box-shadow: rgba(227, 227, 227, 0.35) 0px 5px 15px; */
+  /* box-shadow: rgba(227, 227, 227, 0.35) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+}
+.card-image {
+  /* height: 200px; */
+  width: 350px;
+  cursor: pointer;
+}
+.card-content {
+  @include flex(null, null, column);
+}
+.card-content-end {
+  @include flex(null, null, column);
+  padding: 15px;
+}
+.card-name {
+  color: $white;
+  align-self: center;
+}
+.card-text {
+  color: $grey;
+  line-height: 1.6rem;
+}
+.card-tech-header {
+  align-self: center;
+  color: $white;
+}
+.card-stack {
+  @include flex(null, space-evenly, row);
+  flex-wrap: wrap;
+}
+.card-tech {
+  color: $pink;
+  margin: 2px;
+}
+.card-buttons-container {
+  @include flex(center, space-evenly, row);
+  margin-top: 5px;
+}
+.card-button {
+  @include flex(center, center, row);
+  color: $background-color;
+  width: 150px;
+  height: 50px;
+  background-color: $teal;
+  transition: all 0.4s ease-in-out;
+}
+
+.card-button:active {
+  opacity: 0.7;
+}

@@ -1,0 +1,11 @@
+.socials-container {
+  @include flex(center, center, row);
+}
+.socials-header {
+  flex: 1;
+}
+.socials {
+  margin-right: 30px;
+  color: $white;
+  font-size: 34px;
+}

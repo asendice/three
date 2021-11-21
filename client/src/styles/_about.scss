@@ -1,0 +1,40 @@
+.about-container {
+  @include flex(null, null, column);
+  width: 800px;
+}
+.about-achievement {
+  @include flex(null, null, column);
+  margin-top: 20px;
+}
+.achievement-container {
+  flex: 1;
+  @include flex(null, center, row);
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.achievement {
+  @include flex(null, null, column);
+  height: 110px;
+  max-width: 180px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: $mobile;
+  margin: 10px;
+  text-decoration: none;
+  transition: all 0.8s ease;
+  p {
+    color: $white;
+  }
+  &:hover {
+    transform: translate(0.35em, -0.35em);
+  }
+  
+}
+.nucamp {
+  background-clip: text;
+  background: -webkit-linear-gradient(to right, $blue 0%, $purple 50%);
+  background: -moz-linear-gradient(to right, $blue 0%, $purple 50%);
+  background: linear-gradient(to right, $blue 0%, $purple 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
