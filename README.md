@@ -1,5 +1,7 @@
 # Portfolio
 
+This is my portfolio that displays information about projects that I've created, certificates I've earned, 
+my contact details, and information about myself and my web development journey.
 
 
 ## Installation
@@ -52,3 +54,6 @@ mongoose: 6.0.10
 https://github.com/asendice
 https://www.linkedin.com/in/dylan-travis-2716a4205
 https://dylantravisportfolio.com
+```
+## License
+[MIT](https://github.com/asendice/three/license.txt)
