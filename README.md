@@ -1,6 +1,6 @@
-# portfolio
+# Portfolio
 
-Enter description:
+
 
 ## Installation
 
@@ -38,14 +38,14 @@ $ npm start
 
 ```Project is created with
 axios: 0.23.0,
-react 17.0.2
-react-dom 17.0.2
-react-icons 4.3.1
-react-router-dom 5.3.0
-react-scripts 4.0.3
-react-scroll 1.8.4
-express 4.17.1
-mongoose 6.0.10
+react: 17.0.2
+react-dom: 17.0.2
+react-icons: 4.3.1
+react-router-dom: 5.3.0
+react-scripts: 4.0.3
+react-scroll: 1.8.4
+express: 4.17.1
+mongoose: 6.0.10
 ```
 ## Links 
 ```
