@@ -51,7 +51,6 @@ const ImageModal = ({ images, open, setOpen }) => {
               setOpen(!open);
             }}
           >
-            {" "}
             <BiX />
           </button>
           <div className="image-content">

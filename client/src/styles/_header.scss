@@ -1,0 +1,67 @@
+.header-navigation-container {
+  flex: 2;
+  @include flex(null, space-evenly, row);
+}
+.header-container {
+  @include flex(center, space-between, row);
+  padding: 25px;
+  background-color: $background-color;
+}
+.header-name {
+  flex: 1;
+  @include flex(center, center, row);
+}
+.logo {
+  font-size: 4rem;
+  color: $white;
+}
+.header-navigation {
+  flex: 1;
+  @include flex(center, space-between, row);
+}
+.header-navigation a {
+  font-size: 20px;
+  color: $grey;
+}
+a.active-link {
+  color: $white;
+}
+.burger-container {
+  @include flex(center, space-evenly, column);
+  flex: 0;
+  height: 35px;
+  padding: 5px;
+  opacity: 0;
+  cursor: pointer;
+}
+.line {
+  width: 35px;
+  height: 3px;
+  background-color: $white;
+}
+.mobile-menu {
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+  top: 2%;
+  transition: all ease-in-out 0.4s;
+  opacity: 0;
+  background-color: $mobile;
+}
+.mobile-menu-container {
+  @include flex(null, space-between, column);
+  height: 100%;
+  padding: 25px;
+}
+.mobile-link {
+  color: $white;
+  font-size: 20px;
+}
+.mobile-link:hover {
+  text-decoration: underline;
+}
+.mobile-menu-social {
+  @include flex (null, space-between,  row);
+  margin-top: 10px;
+  cursor: pointer;
+}
