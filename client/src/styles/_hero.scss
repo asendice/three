@@ -36,21 +36,21 @@
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
-  color: white;
-  border-radius: 10px;
+  color: $white;
   display: block;
   background-image: linear-gradient(
     to right,
-    #4776e6 0%,
-    #8e54e9 51%,
-    #4776e6 100%
+    $teal 0%,
+    $pink 51%,
+    $grey 100%
   );
-}
-.hero-button:hover {
-  background-position: right center; /* change the direction of the change here */
-  color: $white;
-  text-decoration: none;
-  cursor: pointer;
+  &:hover {
+    background-position: right center; /* change the direction of the change here */
+    cursor: pointer;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 .hero-right {
   margin-left: -100px;

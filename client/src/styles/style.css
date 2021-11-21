@@ -126,8 +126,8 @@
 
 .nucamp {
   background-clip: text;
-  background: -webkit-gradient(linear, left top, right top, from(#0070f5), color-stop(50%, #9f4bc9));
-  background: linear-gradient(to right, #0070f5 0%, #9f4bc9 50%);
+  background: -webkit-gradient(linear, left top, right top, from(#2ea7bd), color-stop(50%, rgba(245, 35, 74, 0.81)));
+  background: linear-gradient(to right, #2ea7bd 0%, rgba(245, 35, 74, 0.81) 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -213,7 +213,7 @@
 }
 
 .card-tech {
-  color: #f5234b;
+  color: rgba(245, 35, 74, 0.81);
   margin: 2px;
 }
 
@@ -617,19 +617,20 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background-size: 200% auto;
-  color: white;
-  border-radius: 10px;
+  color: #fff;
   display: block;
-  background-image: -webkit-gradient(linear, left top, right top, from(#4776e6), color-stop(51%, #8e54e9), to(#4776e6));
-  background-image: linear-gradient(to right, #4776e6 0%, #8e54e9 51%, #4776e6 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#2ea7bd), color-stop(51%, rgba(245, 35, 74, 0.81)), to(grey));
+  background-image: linear-gradient(to right, #2ea7bd 0%, rgba(245, 35, 74, 0.81) 51%, grey 100%);
 }
 
 .hero-button:hover {
   background-position: right center;
   /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
   cursor: pointer;
+}
+
+.hero-button:active {
+  opacity: 0.3;
 }
 
 .hero-right {
