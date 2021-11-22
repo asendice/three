@@ -24,7 +24,7 @@ app.use("/api", authRoutes);
 
 const whitelist = [
   "http://localhost:3000",
-  "https://dylantravis.herokuapp.com",
+  "https://dylantravis.herokuapp.com/api",
 ];
 const corsOptions = {
   origin: function (origin, callback) {
