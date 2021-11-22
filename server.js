@@ -10,7 +10,8 @@ const authRoutes = require("./routes/auth");
 
 const app = express();
 
-console.log(process.env.DATABASE)
+console.log(process.env.DATABASE, "?")
+
 
 mongoose
   .connect(process.env.DATABASE, {
