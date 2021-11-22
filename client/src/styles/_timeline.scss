@@ -10,12 +10,12 @@
 .timeline-item {
   @include flex (null, center, column);
   position: absolute;
-  width: 270px;
+  width: 180px;
   @include lg {
-    width: 130px;
+    width: 110px;
   }
   @include md {
-    width: 100px;
+    width: 80px;
   }
   transition: all ease 0.3s;
   cursor: default;
@@ -55,4 +55,7 @@
   left: 120%;
   transform: translateX(calc(-100% - 2rem));
   opacity: 0;
+  @include xl {
+    left: 100%;
+  }
 }

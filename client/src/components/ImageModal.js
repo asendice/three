@@ -7,7 +7,9 @@ const ImageModal = ({ images, open, setOpen }) => {
 
   useEffect(() => {
     if (open) {
-      // document.body.style.position = "fixed";
+      document.body.style.height = "100%";
+      document.body.style.overflow = "hidden";
+      console.log('hello this is working every time')
     } else {
       document.body.style.overflow = "unset";
     }
@@ -68,7 +70,7 @@ const ImageModal = ({ images, open, setOpen }) => {
                   ? "active-item"
                   : "prev-item";
               return (
-                <img src={img} key={index} className={`modal-image ${style}`} />
+                <img alt={img} src={img} key={index} className={`modal-image ${style}`} />
               );
             })}
             <button

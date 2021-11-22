@@ -1,6 +1,7 @@
 .section-container {
   @include flex(center, null, column);
   min-height: 70vh;
+  overflow-x: hidden;
 }
 .section-header {
   padding: 25px;

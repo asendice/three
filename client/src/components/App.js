@@ -16,7 +16,6 @@ const App = () => {
       .get("/aboutme")
       .then((response) => {
         if (response) {
-          console.log(response);
           return response;
         } else {
           const error = new Error(`${error.status}: ${error.statusText}`);

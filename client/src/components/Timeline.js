@@ -55,7 +55,7 @@ const Timeline = () => {
       </p>
       <div className="timeline-container">
         {firstIndex > 0 ? (
-          <button className="timeline-arrows cursor" onClick={() => onLeftArrowClick()}>
+          <button className="timeline-arrows" onClick={() => onLeftArrowClick()}>
             <BsArrowLeftShort  />
           </button>
         ) : (
@@ -80,7 +80,7 @@ const Timeline = () => {
           );
         })}
         {firstIndex <= 4 ? (
-          <button className="timeline-arrows cursor" onClick={() => onRightArrowClick()}>
+          <button className="timeline-arrows" onClick={() => onRightArrowClick()}>
             <BsArrowRightShort  />
           </button>
         ) : null}
