@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import RightSideAnimation from "./RightSideAnimation";
 
-const Hero = () => {
+const Hero = ({text}) => {
+
   return (
     <div id="hero" className="hero-container">
       <div className="hero-left">
@@ -10,10 +11,7 @@ const Hero = () => {
           My Personal Portfolio
         </h1>
         <p className="hero-text">
-          Generate some really good random text. This needs to look like a
-          paragraph of random really cool and interested text. Maybe this text
-          is the end all be all of web development. Who knows? As long as it
-          looks as it should.
+          {text}
         </p>
         <div className="hero-button">Learn More</div>
       </div>

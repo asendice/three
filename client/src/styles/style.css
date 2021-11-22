@@ -606,7 +606,7 @@
   color: grey;
   font-size: 18px;
   line-height: 2rem;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .hero-button {
@@ -825,6 +825,7 @@
   margin-right: 30px;
   color: #fff;
   font-size: 34px;
+  text-decoration: none;
 }
 
 .tech-container {

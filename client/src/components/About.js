@@ -1,7 +1,7 @@
 import React from "react";
 import Timeline from "./Timeline";
 
-const About = () => {
+const About = ({text}) => {
   return (
     <div id="about" className="section-container">
       <div className="section-header">
@@ -10,9 +10,7 @@ const About = () => {
 
       <div className="about-container">
         <p className="hero-text">
-          Here is a bunch of text that will be about me and my passion for
-          coding this text will show the visitor of the web page "about-me" -how
-          i got into coding -my coding journey
+         {text}
         </p>
 
         <Timeline />

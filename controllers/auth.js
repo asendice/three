@@ -1,6 +1,6 @@
 const Project = require("../models/Projects");
 // const Tech = require("../models/Tech");
-// const AboutMe = require("../models/AboutMe");
+const AboutMe = require("../models/AboutMe");
 
 // get and return all projects
 exports.getProjects = (req, res) => {
@@ -13,6 +13,20 @@ exports.getProjects = (req, res) => {
       return res.status(200).json({
         success: true,
         message: proj,
+      });
+    }
+  });
+};
+exports.getAboutMe = (req, res) => {
+  AboutMe.find().then((item) => {
+    if (!item) {
+      return res.status(404).json({
+        errors: [{ user: "AboutMe cannot be found" }],
+      });
+    } else {
+      return res.status(200).json({
+        success: true,
+        message: item,
       });
     }
   });
