@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(cors());
 app.use("/api", authRoutes);
 
-const whitelist = ["http://localhost:3000", "https://twitterclone-dt.herokuapp.com/api"];
+const whitelist = ["http://localhost:3000", "https://dylantravis.herokuapp.com/api"];
 const corsOptions = {
   origin: function (origin, callback) {
     console.log("** Origin of request " + origin);
