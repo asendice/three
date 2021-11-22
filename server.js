@@ -10,11 +10,11 @@ const authRoutes = require("./routes/auth");
 
 const app = express();
 
+
 mongoose
   .connect(process.env.DATABASE, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true,
   })
   .then(() => console.log("DB is connected"));
 
