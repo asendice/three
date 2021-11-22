@@ -37,7 +37,7 @@ const whitelist = [
 //     }
 //   },
 // };
-app.use(cors(corsOptions));
+app.use(cors());
 app.use("/api", authRoutes);
 
 // need for production
