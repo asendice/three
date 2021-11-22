@@ -9,7 +9,7 @@ const Card = ({ project }) => {
         <img
           alt={`${project.name} display image`}
           className="card-image"
-          src={project.images[1]}
+          src={project.images[0]}
           onClick={() => setOpen(!open)}
         />
         <div style={{ padding: "15px" }}>

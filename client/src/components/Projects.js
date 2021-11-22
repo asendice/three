@@ -31,9 +31,11 @@ const Projects = () => {
         <h1 className="section-title">Projects</h1>
       </div>
       <div className="projects-container">
-        {projects.map((project, index) => {
-          return <Card key={index} project={project} />;
-        })}
+        {projects
+          .sort((a, b) => a.order - b.order)
+          .map((project, index) => {
+            return <Card key={index} project={project} />;
+          })}
       </div>
     </div>
   );
