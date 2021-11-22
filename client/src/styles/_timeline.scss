@@ -17,7 +17,7 @@
   @include md {
     width: 80px;
   }
-  transition: all ease 0.3s;
+  transition: all ease-in-out 0.2s;
   cursor: default;
   p {
     color: $white;

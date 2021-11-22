@@ -20,3 +20,12 @@
     width: 300px;
   }
 }
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background: $background-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $mobile;
+}
