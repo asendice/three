@@ -19,9 +19,7 @@ const Header = () => {
             spy={true}
             smooth={true}
             duration={1500}
-            // offset={-60}
             activeClass="active-link"
-            className="cursor"
           >
             <h5 className="section-title" style={{ fontSize: "2rem" }}>
               Dylan Travis
@@ -35,9 +33,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={1500}
-              // offset={-60}
               activeClass="active-link"
-              className="cursor"
             >
               Projects
             </Link>
@@ -46,9 +42,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={1500}
-              // offset={-60}
               activeClass="active-link"
-              className="cursor"
             >
               Tech
             </Link>
@@ -57,9 +51,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={1500}
-              // offset={-60}
               activeClass="active-link"
-              className="cursor"
             >
               About Me
             </Link>

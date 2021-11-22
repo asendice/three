@@ -22,8 +22,9 @@
   flex: 1;
   @include flex(center, space-between, row);
   a {
+    cursor: pointer;
     font-size: 20px;
-    color: $grey;
+    color: $teal;
     .active-link {
       color: $white;
     }

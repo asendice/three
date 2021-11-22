@@ -439,8 +439,9 @@
 }
 
 .header-navigation a {
+  cursor: pointer;
   font-size: 20px;
-  color: grey;
+  color: #2ea7bd;
 }
 
 .header-navigation a .active-link {

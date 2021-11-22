@@ -1,8 +1,7 @@
-import React, {useState, useEffect} from "react";
-import RightSideAnimation from "./RightSideAnimation";
+import React from "react";
+import { Link } from "react-scroll";
 
-const Hero = ({text}) => {
-
+const Hero = ({ text }) => {
   return (
     <div id="hero" className="hero-container">
       <div className="hero-left">
@@ -10,14 +9,19 @@ const Hero = ({text}) => {
           Welcome To <br />
           My Personal Portfolio
         </h1>
-        <p className="hero-text">
-          {text}
-        </p>
-        <div className="hero-button">Learn More</div>
+        <p className="hero-text">{text}</p>
+        <Link
+          to="projects"
+          spy={true}
+          smooth={true}
+          duration={1500}
+          activeClass="active-link"
+          className="hero-button"
+        >
+          Learn More
+        </Link>
       </div>
-      <div className="hero-right">
-        {/* <RightSideAnimation /> */}
-      </div>
+      <div className="hero-right"></div>
     </div>
   );
 };
