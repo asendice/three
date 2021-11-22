@@ -1,16 +1,16 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const path = require("path");
 require("dotenv").config();
 
 // //import Routes
 const authRoutes = require("./routes/auth");
 
-
 const app = express();
 
 mongoose
-  .connect(process.env.DATABASE , {
+  .connect(process.env.DATABASE, {
     // useNewUrlParser: true,
     // useCreateIndex: true,
     useUnifiedTopology: true,
@@ -22,7 +22,10 @@ app.use(express.json());
 app.use(cors());
 app.use("/api", authRoutes);
 
-const whitelist = ["http://localhost:3000", "https://dylantravis.herokuapp.com/api"];
+const whitelist = [
+  "http://localhost:3000",
+  "https://dylantravis.herokuapp.com/api",
+];
 const corsOptions = {
   origin: function (origin, callback) {
     console.log("** Origin of request " + origin);
