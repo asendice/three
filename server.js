@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const path = require("path");
+
 require("dotenv").config();
 
 // //import Routes
@@ -12,8 +13,8 @@ const app = express();
 mongoose
   .connect(process.env.DATABASE, {
     useNewUrlParser: true,
-    useCreateIndex: true,
     useUnifiedTopology: true,
+    useCreateIndex: true,
   })
   .then(() => console.log("DB is connected"));
 
@@ -34,6 +35,8 @@ if (process.env.NODE_ENV === "production") {
     res.send("Api running");
   });
 }
+
+const whitelist = ["http://localhost:3000", "https://dylantravis.herokuapp.com/api"];
 
 const corsOptions = {
   origin: function (origin, callback) {
