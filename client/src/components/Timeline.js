@@ -32,7 +32,7 @@ const Timeline = () => {
     {
       date: "2021",
       title:
-        "Looking for work as Front-End Developer, coding and making projects everyday",
+        "Learning and developing projects everyday",
     },
   ];
 

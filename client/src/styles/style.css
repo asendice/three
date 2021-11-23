@@ -975,7 +975,7 @@ body::-webkit-scrollbar {
 
 @media (max-width: 500px) {
   .timeline-item {
-    width: 80px;
+    width: 95px;
   }
 }
 
