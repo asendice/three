@@ -1,6 +1,9 @@
 .hero-container {
   @include flex(center, center, row);
   min-height: 85vh;
+  @include md {
+    min-height: 60vh;
+  }
 }
 .hero-left {
   @include flex(flex-start, null, column);

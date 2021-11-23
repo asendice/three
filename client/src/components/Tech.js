@@ -82,10 +82,6 @@ const Technologies = () => {
       </div>
 
       <div className="tech-container">
-        <p className="hero-text">
-          Here are all of the technologies that I have used and am actively creating
-          projects with.
-        </p>
         <div className="tech-icon-container">
           {arr.map((item, index) => {
             return (

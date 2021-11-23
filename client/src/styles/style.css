@@ -423,6 +423,14 @@ body::-webkit-scrollbar {
           flex-direction: row;
 }
 
+@media (max-width: 500px) {
+  .header-name {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+}
+
 .logo {
   font-size: 4rem;
   color: #fff;
@@ -514,8 +522,8 @@ body::-webkit-scrollbar {
   .mobile-menu-active {
     visibility: visible;
     opacity: 1;
-    -webkit-transform: translateY(40%);
-            transform: translateY(40%);
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
   }
 }
 
@@ -574,6 +582,12 @@ body::-webkit-scrollbar {
       -ms-flex-direction: row;
           flex-direction: row;
   min-height: 85vh;
+}
+
+@media (max-width: 500px) {
+  .hero-container {
+    min-height: 60vh;
+  }
 }
 
 .hero-left {

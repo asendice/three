@@ -7,14 +7,11 @@ const About = ({text}) => {
       <div className="section-header">
         <h1 className="section-title">About Me</h1>
       </div>
-
       <div className="about-container">
-        <p className="hero-text">
+        <p className="hero-text" style={{marginTop: "-20px"}}>
          {text}
         </p>
-
         <Timeline />
-
         <div className="about-achievement">
           <p className="section-title" style={{ fontSize: "1.4rem" }}>
             Personal Achievements

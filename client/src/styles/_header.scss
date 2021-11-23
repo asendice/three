@@ -13,6 +13,9 @@
 .header-name {
   flex: 1;
   @include flex(center, center, row);
+  @include md {
+    flex: 3;
+  }
 }
 .logo {
   font-size: 4rem;
@@ -64,7 +67,7 @@
   @include lg {
     visibility: visible;
     opacity: 1;
-    transform: translateY(40%);
+    transform: translateY(50%);
   }
 }
 .mobile-menu-container {
